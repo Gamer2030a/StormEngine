@@ -26,13 +26,15 @@ workspace "Storm"
 
       includedirs
       {
+        "%{prj.name}/SRC",
+        "%{prj.name}/Storm/Events",
         "%{prj.name}/3dlibs/Spdlog/include" --remove Storm--
       }
 
       filter "system:windows"
        cppdialect "C++17"
        staticruntime "On"
-       systemversion "10.0.19041.0" 
+       systemversion "latest" --10.0.19041.0--
 
        defines
        {
@@ -85,7 +87,7 @@ workspace "Storm"
       filter "system:windows"
        cppdialect "C++17"
        staticruntime "On"
-       systemversion "10.0.19041.0"
+       systemversion "latest"
 
        defines
        {

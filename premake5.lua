@@ -10,8 +10,8 @@ workspace "Storm"
 
   outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
-  project "Storm"
-      location "Storm"
+  project "Engine"
+      location "Engine"
       kind "SharedLib"
       language "C++"
 
@@ -75,13 +75,13 @@ workspace "Storm"
 
       includedirs 
       {
-        "Storm/3dlibs/Spdlog/include",
-        "Storm/SRC"
+        "Engine/3dlibs/Spdlog/include",
+        "Engine/SRC"
       }
 
       links
       {
-         "Storm"
+         "Engine"
       }
 
       filter "system:windows"

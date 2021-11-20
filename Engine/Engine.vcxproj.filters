@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Storm">
+      <UniqueIdentifier>{3A751E0E-A689-46BF-6F0B-EA1EDBDE42F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Storm\Events">
+      <UniqueIdentifier>{DEBB08A9-CA1E-984D-73A4-D0035FE663D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{418910eb-3bd5-4a36-953d-1e3d0d6ed90b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Windows">
+      <UniqueIdentifier>{9b13c6e2-6cce-45ee-8793-439798178388}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\LinuxArch">
+      <UniqueIdentifier>{1c84eba1-56ed-4da8-91c3-65e5faba17fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Linux">
+      <UniqueIdentifier>{16155149-1d1e-4fba-b63d-a8a0f1546caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Mac">
+      <UniqueIdentifier>{7a5b7bae-af72-4f19-8560-08255cacd0e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{55dcba7f-017c-41ba-aafb-a42e1d7981b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\WeatherSystem">
+      <UniqueIdentifier>{c7d5f9a6-9802-4ae7-9dda-3a02f2134f0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VolumetricFog">
+      <UniqueIdentifier>{36d670b1-1f3f-4680-843d-61d231575675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\VolumetricClouds">
+      <UniqueIdentifier>{d53d06df-c0ad-41ab-8fde-26743dbc4bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MeshSpline">
+      <UniqueIdentifier>{09a1a70c-bd6f-4e6d-af07-ee80f2dd65ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\RoadSpline">
+      <UniqueIdentifier>{d36ed35f-3912-4a72-8197-58da3d2a6d01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SRC\Storm.h" />
+    <ClInclude Include="SRC\Storm\Application.h">
+      <Filter>Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Core.h">
+      <Filter>Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\EntryPoint.h">
+      <Filter>Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\ApplicationEvent.h">
+      <Filter>Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\Event.h">
+      <Filter>Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\KeyEvent.h">
+      <Filter>Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\MouseEvent.h">
+      <Filter>Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\FMath.h">
+      <Filter>Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Log.h">
+      <Filter>Storm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SRC\Storm\Application.cpp">
+      <Filter>Storm</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Storm\Log.cpp">
+      <Filter>Storm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BaseCompat.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="WeatherSettingsEditor.ini">
+      <Filter>Plugins\WeatherSystem</Filter>
+    </None>
+    <None Include="WindowsEditorSettings.ini">
+      <Filter>Config\Windows</Filter>
+    </None>
+    <None Include="MacEditorSettings.ini">
+      <Filter>Config\Mac</Filter>
+    </None>
+    <None Include="LinuxEditorSettings.ini">
+      <Filter>Config\Linux</Filter>
+    </None>
+    <None Include="LinuxArchEditorSettings.ini">
+      <Filter>Config\LinuxArch</Filter>
+    </None>
+  </ItemGroup>
+</Project>

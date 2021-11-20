@@ -163,6 +163,7 @@
     <None Include="LinuxArchEditorSettings.ini" />
     <None Include="LinuxEditorSettings.ini" />
     <None Include="MacEditorSettings.ini" />
+    <None Include="VulkanSettings.ini" />
     <None Include="WeatherSettingsEditor.ini" />
     <None Include="WindowsEditorSettings.ini" />
   </ItemGroup>

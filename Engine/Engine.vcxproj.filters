@@ -40,6 +40,12 @@
     <Filter Include="Plugins\RoadSpline">
       <UniqueIdentifier>{d36ed35f-3912-4a72-8197-58da3d2a6d01}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Storm\Vulkan">
+      <UniqueIdentifier>{2e5b2e4f-39a4-43a2-892d-cb9ebb291cdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Storm\Vulkan\RT">
+      <UniqueIdentifier>{5d38b9e8-97e0-4b3e-afc5-4bb52dca2e1c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SRC\Storm.h" />
@@ -97,6 +103,9 @@
     </None>
     <None Include="LinuxArchEditorSettings.ini">
       <Filter>Config\LinuxArch</Filter>
+    </None>
+    <None Include="VulkanSettings.ini">
+      <Filter>Storm\Vulkan</Filter>
     </None>
   </ItemGroup>
 </Project>

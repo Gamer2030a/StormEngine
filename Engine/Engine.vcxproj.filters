@@ -1,50 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{5B583FAC-47FA-6982-30B5-7DD61CF6F0D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Linux">
+      <UniqueIdentifier>{BA239274-A686-2119-4F0C-5ACF3B4EED9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\LinuxArch">
+      <UniqueIdentifier>{780737F4-6400-5646-8D32-3BCB798A3552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Mac">
+      <UniqueIdentifier>{1B28B5F2-07E0-F63F-70E7-CF9B5CBE9130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config\Windows">
+      <UniqueIdentifier>{952D6130-81FB-5436-6A8F-C55C56FC309B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{E7385F16-5318-DEB1-5C30-6988C88E4413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\WeatherSystem">
+      <UniqueIdentifier>{2B177B67-9783-3662-6077-CEBFCCA258CA}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Storm">
       <UniqueIdentifier>{3A751E0E-A689-46BF-6F0B-EA1EDBDE42F0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Storm\Events">
       <UniqueIdentifier>{DEBB08A9-CA1E-984D-73A4-D0035FE663D0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Config">
-      <UniqueIdentifier>{418910eb-3bd5-4a36-953d-1e3d0d6ed90b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\Windows">
-      <UniqueIdentifier>{9b13c6e2-6cce-45ee-8793-439798178388}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\LinuxArch">
-      <UniqueIdentifier>{1c84eba1-56ed-4da8-91c3-65e5faba17fc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\Linux">
-      <UniqueIdentifier>{16155149-1d1e-4fba-b63d-a8a0f1546caa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Config\Mac">
-      <UniqueIdentifier>{7a5b7bae-af72-4f19-8560-08255cacd0e2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins">
-      <UniqueIdentifier>{55dcba7f-017c-41ba-aafb-a42e1d7981b1}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins\WeatherSystem">
-      <UniqueIdentifier>{c7d5f9a6-9802-4ae7-9dda-3a02f2134f0a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins\VolumetricFog">
-      <UniqueIdentifier>{36d670b1-1f3f-4680-843d-61d231575675}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins\VolumetricClouds">
-      <UniqueIdentifier>{d53d06df-c0ad-41ab-8fde-26743dbc4bcf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins\MeshSpline">
-      <UniqueIdentifier>{09a1a70c-bd6f-4e6d-af07-ee80f2dd65ce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Plugins\RoadSpline">
-      <UniqueIdentifier>{d36ed35f-3912-4a72-8197-58da3d2a6d01}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Storm\Vulkan">
-      <UniqueIdentifier>{2e5b2e4f-39a4-43a2-892d-cb9ebb291cdc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Storm\Vulkan\RT">
-      <UniqueIdentifier>{5d38b9e8-97e0-4b3e-afc5-4bb52dca2e1c}</UniqueIdentifier>
+      <UniqueIdentifier>{7A1DA2D0-6680-3175-0F06-6A2BFB47FDF7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,6 +61,9 @@
     <ClInclude Include="SRC\Storm\Log.h">
       <Filter>Storm</Filter>
     </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Storm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SRC\Storm\Application.cpp">
@@ -86,25 +74,25 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="BaseCompat.ini">
+    <None Include="SRC\Config\BaseCompat.ini">
       <Filter>Config</Filter>
     </None>
-    <None Include="WeatherSettingsEditor.ini">
-      <Filter>Plugins\WeatherSystem</Filter>
-    </None>
-    <None Include="WindowsEditorSettings.ini">
-      <Filter>Config\Windows</Filter>
-    </None>
-    <None Include="MacEditorSettings.ini">
-      <Filter>Config\Mac</Filter>
-    </None>
-    <None Include="LinuxEditorSettings.ini">
+    <None Include="SRC\Config\Linux\LinuxEditorSettings.ini">
       <Filter>Config\Linux</Filter>
     </None>
-    <None Include="LinuxArchEditorSettings.ini">
+    <None Include="SRC\Config\LinuxArch\LinuxArchEditorSettings.ini">
       <Filter>Config\LinuxArch</Filter>
     </None>
-    <None Include="VulkanSettings.ini">
+    <None Include="SRC\Config\Mac\MacEditorSettings.ini">
+      <Filter>Config\Mac</Filter>
+    </None>
+    <None Include="SRC\Config\Windows\WindowsEditorSettings.ini">
+      <Filter>Config\Windows</Filter>
+    </None>
+    <None Include="SRC\Plugins\WeatherSystem\WeatherSettingsEditor.ini">
+      <Filter>Plugins\WeatherSystem</Filter>
+    </None>
+    <None Include="SRC\Storm\Vulkan\VulkanSettings.ini">
       <Filter>Storm\Vulkan</Filter>
     </None>
   </ItemGroup>

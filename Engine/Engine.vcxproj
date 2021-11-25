@@ -79,7 +79,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_BUILD_DLL;ST_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SRC;Storm\Events;3dlibs\Spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SRC;Storm\Events;3dlibs\Spdlog\include;${IncludeDir.GLFW};%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -88,6 +88,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Debug-windows-x86_64\Engine\Engine.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -99,7 +100,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_BUILD_DLL;ST_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SRC;Storm\Events;3dlibs\Spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SRC;Storm\Events;3dlibs\Spdlog\include;${IncludeDir.GLFW};%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -112,6 +113,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Release-windows-x86_64\Engine\Engine.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -123,7 +125,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>HZ_PLATFORM_WINDOWS;HZ_BUILD_DLL;ST_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>SRC;Storm\Events;3dlibs\Spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>SRC;Storm\Events;3dlibs\Spdlog\include;${IncludeDir.GLFW};%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -136,6 +138,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Dist-windows-x86_64\Engine\Engine.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -153,19 +156,25 @@
     <ClInclude Include="SRC\Storm\Events\MouseEvent.h" />
     <ClInclude Include="SRC\Storm\FMath.h" />
     <ClInclude Include="SRC\Storm\Log.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SRC\Storm\Application.cpp" />
     <ClCompile Include="SRC\Storm\Log.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="BaseCompat.ini" />
-    <None Include="LinuxArchEditorSettings.ini" />
-    <None Include="LinuxEditorSettings.ini" />
-    <None Include="MacEditorSettings.ini" />
-    <None Include="VulkanSettings.ini" />
-    <None Include="WeatherSettingsEditor.ini" />
-    <None Include="WindowsEditorSettings.ini" />
+    <None Include="SRC\Config\BaseCompat.ini" />
+    <None Include="SRC\Config\Linux\LinuxEditorSettings.ini" />
+    <None Include="SRC\Config\LinuxArch\LinuxArchEditorSettings.ini" />
+    <None Include="SRC\Config\Mac\MacEditorSettings.ini" />
+    <None Include="SRC\Config\Windows\WindowsEditorSettings.ini" />
+    <None Include="SRC\Plugins\WeatherSystem\WeatherSettingsEditor.ini" />
+    <None Include="SRC\Storm\Vulkan\VulkanSettings.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="3dlibs\GLFW\GLFW.vcxproj">
+      <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -10,6 +10,11 @@ workspace "Storm"
 
   outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+  IncludeDir = {}
+  IncludeDir["GLFW"] = "Engine/3dlibs/GLFW/include"
+
+  include "Engine/3dlibs/GLFW"
+
   project "Engine"
       location "Engine"
       kind "SharedLib"
@@ -21,14 +26,22 @@ workspace "Storm"
       files 
       {
           "%{prj.name}/SRC/**.h",
-          "%{prj.name}/SRC/**.cpp"
+          "%{prj.name}/SRC/**.cpp",
+           "%{prj.name}/SRC/**.ini"
       }
 
       includedirs
       {
         "%{prj.name}/SRC",
         "%{prj.name}/Storm/Events",
-        "%{prj.name}/3dlibs/Spdlog/include" --remove Storm--
+        "%{prj.name}/3dlibs/Spdlog/include", --remove Storm--
+        "${IncludeDir.GLFW}"
+      }
+
+      links 
+      {
+          "GLFW",
+          "opengl32.lib"
       }
 
       filter "system:windows"

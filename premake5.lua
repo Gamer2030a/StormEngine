@@ -23,11 +23,14 @@ workspace "Storm"
       targetdir ("bin/" .. outputdir .. "/%{prj.name}")
       objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+      pchheader "STpch.h"
+      pchsource "Engine/SRC/STpch.cpp"
+
       files 
       {
           "%{prj.name}/SRC/**.h",
           "%{prj.name}/SRC/**.cpp",
-           "%{prj.name}/SRC/**.ini"
+          "%{prj.name}/SRC/**.ini"
       }
 
       includedirs
@@ -35,7 +38,7 @@ workspace "Storm"
         "%{prj.name}/SRC",
         "%{prj.name}/Storm/Events",
         "%{prj.name}/3dlibs/Spdlog/include", --remove Storm--
-        "%{prj.name}/3dlibs/glm/glm", --remove Storm--
+        "%{prj.name}/3dlibs/glm/glm",
         "${IncludeDir.GLFW}"
       }
 
@@ -84,13 +87,14 @@ workspace "Storm"
       files 
       {
           "%{prj.name}/SRC/**.h",
-          "%{prj.name}/SRC/**.cpp"
+          "%{prj.name}/SRC/**.cpp",
       }
 
       includedirs 
       {
         "Engine/3dlibs/Spdlog/include",
-        "Engine/SRC"
+        "Engine/SRC",
+        "Engine/3dlibs/glm/glm" --this--
       }
 
       links

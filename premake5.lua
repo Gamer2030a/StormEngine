@@ -35,6 +35,7 @@ workspace "Storm"
         "%{prj.name}/SRC",
         "%{prj.name}/Storm/Events",
         "%{prj.name}/3dlibs/Spdlog/include", --remove Storm--
+        "%{prj.name}/3dlibs/glm/glm", --remove Storm--
         "${IncludeDir.GLFW}"
       }
 

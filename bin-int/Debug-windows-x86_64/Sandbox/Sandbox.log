@@ -1,0 +1,8 @@
+﻿  SandboxApplication.cpp
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\Log.h(18,42): warning C4251: 'Storm::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Storm::Log'
+K:\dESK\Desktop\Storm\Engine\3dlibs\Spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\Log.h(19,42): warning C4251: 'Storm::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Storm::Log'
+K:\dESK\Desktop\Storm\Engine\3dlibs\Spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>'
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\FMath.h(15,13): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\FMath.h(36,13): warning C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\EntryPoint.h(5,10): fatal error C1083: Cannot open include file: 'GLFW/glfw3.h': No such file or directory

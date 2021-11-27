@@ -1,0 +1,15 @@
+[submodule "Engine/3dlibs/Spdlog"]
+	path = Engine/3dlibs/Spdlog
+	url = https://github.com/gabime/spdlog
+[submodule "Engine/3dlibs/GLFW"]
+	path = Engine/3dlibs/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "Engine/3dlibs/glm"]
+	path = Engine/3dlibs/glm
+	url = https://github.com/g-truc/glm
+[submodule "Engine/3dlibs/imgui"]
+	path = Engine/3dlibs/imgui
+	url = https://github.com/ocornut/imgui
+[submodule "Engine/3dlibs/ImGuizmo"]
+	path = Engine/3dlibs/ImGuizmo
+	url = https://github.com/CedricGuillemet/ImGuizmo

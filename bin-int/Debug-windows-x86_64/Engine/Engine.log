@@ -1,0 +1,9 @@
+﻿  STpch.cpp
+  ImGuizmo.cpp
+  Application.cpp
+  Log.cpp
+c1xx : fatal error C1083: Cannot open source file: '..\3dlibs\ImGuizmo\ImGuizmo.cpp': No such file or directory
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\Log.h(18,42): warning C4251: 'Storm::Log::s_CoreLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Storm::Log' (compiling source file SRC\Storm\Log.cpp)
+K:\dESK\Desktop\Storm\Engine\3dlibs\Spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>' (compiling source file SRC\Storm\Log.cpp)
+K:\dESK\Desktop\Storm\Engine\SRC\Storm\Log.h(19,42): warning C4251: 'Storm::Log::s_ClientLogger': class 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of class 'Storm::Log' (compiling source file SRC\Storm\Log.cpp)
+K:\dESK\Desktop\Storm\Engine\3dlibs\Spdlog\include\spdlog\details\registry.h(34): message : see declaration of 'std::shared_ptr<spdlog::logger>' (compiling source file SRC\Storm\Log.cpp)

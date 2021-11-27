@@ -1,0 +1,1400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="3dlibs">
+      <UniqueIdentifier>{E6B32486-D255-4F5C-BB10-63B0A751D6AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\ImGuizmo">
+      <UniqueIdentifier>{06E9E5E9-7274-53AE-7B85-D6A2E78FAFAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs">
+      <UniqueIdentifier>{E6B32486-D255-4F5C-BB10-63B0A751D6AC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\GLFW">
+      <UniqueIdentifier>{E5CE09A4-5184-8299-DA78-7C70462D799D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\GLFW\include">
+      <UniqueIdentifier>{580BD6ED-C46C-B3FB-4DDA-F9ADB93AEABA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\GLFW\include\GLFW">
+      <UniqueIdentifier>{979D157D-83C2-64FD-AC0D-4A8D9891631B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\glm">
+      <UniqueIdentifier>{35C1A3AF-2179-E5FC-8A80-BE58765780ED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\glm\glm">
+      <UniqueIdentifier>{04DE7671-F0AB-6A77-D93F-DB9DC5AC46DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\glm\glm\detail">
+      <UniqueIdentifier>{4669F24A-B2D5-AD45-7BC9-45A3E7F4CFAD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\glm\glm\ext">
+      <UniqueIdentifier>{64C319EE-50A7-DA43-B907-D596A50AC5C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\glm\glm\gtc">
+      <UniqueIdentifier>{51CB19EE-3DAF-DA43-A60F-D5969212C5C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3dlibs\glm\glm\gtx">
+      <UniqueIdentifier>{66CB19EE-52AF-DA43-BB0F-D596A712C5C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC">
+      <UniqueIdentifier>{CD1E880B-3928-887C-C2A3-9E7C2EAC937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Config">
+      <UniqueIdentifier>{32518370-1E09-C5BD-8710-9E1973E75FAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Config\Linux">
+      <UniqueIdentifier>{D1211930-BD1A-3882-E64C-1D07D2A4178E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Config\LinuxArch">
+      <UniqueIdentifier>{0F39ADF8-FBC7-36C2-A4E6-4ABD90544768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Config\Mac">
+      <UniqueIdentifier>{72B467B7-5E82-5BBD-4716-CCE333833722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Config\Windows">
+      <UniqueIdentifier>{6C0DA0E9-58F1-603F-C151-5B92AD544BC1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Plugins">
+      <UniqueIdentifier>{9E4C2263-0A02-9B58-93F6-942FFFAA915C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Plugins\WeatherSystem">
+      <UniqueIdentifier>{22DFB252-8EA1-E6DC-D751-75694353BFBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Storm">
+      <UniqueIdentifier>{312FCBFC-9D99-7F73-E6D7-301952815DC8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Storm\Events">
+      <UniqueIdentifier>{F5B98F64-E1B2-AEB6-0AE5-933BF63C8EC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SRC\Storm\Vulkan">
+      <UniqueIdentifier>{911B298C-7D14-48DE-A646-2D63929E27EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\3dlibs\ImGuizmo\ImGuizmo.h">
+      <Filter>3dlibs\ImGuizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\GLFW\include\GLFW\glfw3.h">
+      <Filter>3dlibs\GLFW\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\GLFW\include\GLFW\glfw3native.h">
+      <Filter>3dlibs\GLFW\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\common.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\_features.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\_fixes.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\_noise.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\_swizzle.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\_swizzle_func.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\_vectorize.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\compute_common.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\compute_vector_relational.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_common.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_common_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_exponential.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_exponential_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_geometric.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_geometric_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_integer.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_integer_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_matrix.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_matrix_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_packing.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_packing_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_trigonometric.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_trigonometric_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_vector_relational.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\func_vector_relational_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\qualifier.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\setup.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_float.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_half.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_half.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat2x2.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat2x2.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat2x3.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat2x3.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat2x4.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat2x4.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat3x2.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat3x2.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat3x3.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat3x3.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat3x4.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat3x4.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x2.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x2.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x3.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x3.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x4.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x4.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_mat4x4_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_quat.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_quat.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_quat_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec1.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec1.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec2.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec2.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec3.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec3.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec4.hpp">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec4.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\detail\type_vec4_simd.inl">
+      <Filter>3dlibs\glm\glm\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\exponential.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_clip_space.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_clip_space.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_common.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_common.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double2x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double2x2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double2x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double2x3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double2x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double2x4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double3x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double3x2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double3x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double3x3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double3x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double3x4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double4x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double4x2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double4x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double4x3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double4x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_double4x4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float2x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float2x2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float2x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float2x3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float2x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float2x4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float3x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float3x2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float3x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float3x3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float3x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float3x4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float4x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float4x2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float4x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float4x3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float4x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_float4x4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int2x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int2x2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int2x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int2x3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int2x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int2x4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int3x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int3x2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int3x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int3x3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int3x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int3x4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int4x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int4x2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int4x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int4x3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int4x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_int4x4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_integer.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_integer.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_projection.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_projection.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_relational.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_relational.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_transform.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_transform.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint2x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint2x2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint2x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint2x3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint2x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint2x4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint3x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint3x2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint3x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint3x3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint3x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint3x4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint4x2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint4x2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint4x3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint4x3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint4x4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\matrix_uint4x4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_common.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_common.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_common_simd.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_double.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_double_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_exponential.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_exponential.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_float.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_float_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_geometric.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_geometric.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_relational.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_relational.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_transform.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_transform.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_trigonometric.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\quaternion_trigonometric.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_common.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_common.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_constants.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_constants.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_int_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_integer.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_integer.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_packing.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_packing.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_reciprocal.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_reciprocal.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_relational.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_relational.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_uint_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_ulp.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\scalar_ulp.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool1.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool1_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_bool4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_common.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_common.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double1.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double1_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_double4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float1.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float1_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float2_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float3_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_float4_precision.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int1.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int1_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_int4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_integer.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_integer.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_packing.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_packing.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_reciprocal.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_reciprocal.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_relational.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_relational.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint1.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint1_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint2.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint2_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint3.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint3_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint4.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_uint4_sized.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_ulp.hpp">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\ext\vector_ulp.inl">
+      <Filter>3dlibs\glm\glm\ext</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\fwd.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\geometric.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\glm.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\bitfield.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\bitfield.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\color_space.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\color_space.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\constants.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\constants.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\epsilon.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\epsilon.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\integer.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\integer.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_access.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_access.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_integer.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_inverse.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_inverse.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_transform.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\matrix_transform.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\noise.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\noise.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\packing.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\packing.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\quaternion.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\quaternion.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\quaternion_simd.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\random.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\random.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\reciprocal.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\round.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\round.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\type_aligned.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\type_precision.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\type_precision.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\type_ptr.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\type_ptr.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\ulp.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\ulp.inl">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtc\vec1.hpp">
+      <Filter>3dlibs\glm\glm\gtc</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\associated_min_max.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\associated_min_max.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\bit.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\bit.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\closest_point.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\closest_point.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\color_encoding.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\color_encoding.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\color_space.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\color_space.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\color_space_YCoCg.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\color_space_YCoCg.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\common.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\common.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\compatibility.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\compatibility.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\component_wise.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\component_wise.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\dual_quaternion.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\dual_quaternion.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\easing.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\easing.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\euler_angles.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\euler_angles.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\extend.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\extend.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\extended_min_max.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\extended_min_max.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\exterior_product.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\exterior_product.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\fast_exponential.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\fast_exponential.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\fast_square_root.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\fast_square_root.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\fast_trigonometry.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\fast_trigonometry.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\float_notmalize.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\functions.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\functions.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\gradient_paint.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\gradient_paint.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\handed_coordinate_space.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\handed_coordinate_space.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\hash.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\hash.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\integer.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\integer.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\intersect.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\intersect.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\io.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\io.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\log_base.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\log_base.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_cross_product.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_cross_product.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_decompose.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_decompose.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_factorisation.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_factorisation.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_interpolation.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_interpolation.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_major_storage.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_major_storage.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_operation.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_operation.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_query.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_query.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_transform_2d.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\matrix_transform_2d.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\mixed_product.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\mixed_product.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\norm.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\norm.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\normal.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\normal.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\normalize_dot.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\normalize_dot.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\number_precision.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\number_precision.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\optimum_pow.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\optimum_pow.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\orthonormalize.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\orthonormalize.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\pca.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\pca.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\perpendicular.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\perpendicular.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\polar_coordinates.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\polar_coordinates.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\projection.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\projection.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\quaternion.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\quaternion.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\range.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\raw_data.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\raw_data.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\rotate_normalized_axis.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\rotate_normalized_axis.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\rotate_vector.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\rotate_vector.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\scalar_multiplication.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\scalar_relational.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\scalar_relational.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\spline.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\spline.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\std_based_type.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\std_based_type.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\string_cast.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\string_cast.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\texture.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\texture.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\transform.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\transform.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\transform2.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\transform2.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\type_aligned.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\type_aligned.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\type_trait.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\type_trait.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\vec_swizzle.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\vector_angle.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\vector_angle.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\vector_query.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\vector_query.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\wrap.hpp">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\gtx\wrap.inl">
+      <Filter>3dlibs\glm\glm\gtx</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\integer.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat2x2.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat2x3.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat2x4.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat3x2.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat3x3.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat3x4.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat4x2.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat4x3.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\mat4x4.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\matrix.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\packing.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\trigonometric.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\vec2.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\vec3.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\vec4.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="3dlibs\glm\glm\vector_relational.hpp">
+      <Filter>3dlibs\glm\glm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\STpch.h">
+      <Filter>SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm.h">
+      <Filter>SRC</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Application.h">
+      <Filter>SRC\Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Core.h">
+      <Filter>SRC\Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\EntryPoint.h">
+      <Filter>SRC\Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\ApplicationEvent.h">
+      <Filter>SRC\Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\Event.h">
+      <Filter>SRC\Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\KeyEvent.h">
+      <Filter>SRC\Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Events\MouseEvent.h">
+      <Filter>SRC\Storm\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\FMath.h">
+      <Filter>SRC\Storm</Filter>
+    </ClInclude>
+    <ClInclude Include="SRC\Storm\Log.h">
+      <Filter>SRC\Storm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\3dlibs\ImGuizmo\ImGuizmo.cpp">
+      <Filter>3dlibs\ImGuizmo</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\STpch.cpp">
+      <Filter>SRC</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Storm\Application.cpp">
+      <Filter>SRC\Storm</Filter>
+    </ClCompile>
+    <ClCompile Include="SRC\Storm\Log.cpp">
+      <Filter>SRC\Storm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SRC\Config\BaseCompat.ini">
+      <Filter>SRC\Config</Filter>
+    </None>
+    <None Include="SRC\Config\Linux\LinuxEditorSettings.ini">
+      <Filter>SRC\Config\Linux</Filter>
+    </None>
+    <None Include="SRC\Config\LinuxArch\LinuxArchEditorSettings.ini">
+      <Filter>SRC\Config\LinuxArch</Filter>
+    </None>
+    <None Include="SRC\Config\Mac\MacEditorSettings.ini">
+      <Filter>SRC\Config\Mac</Filter>
+    </None>
+    <None Include="SRC\Config\Windows\WindowsEditorSettings.ini">
+      <Filter>SRC\Config\Windows</Filter>
+    </None>
+    <None Include="SRC\Plugins\WeatherSystem\WeatherSettingsEditor.ini">
+      <Filter>SRC\Plugins\WeatherSystem</Filter>
+    </None>
+    <None Include="SRC\Storm\Vulkan\VulkanSettings.ini">
+      <Filter>SRC\Storm\Vulkan</Filter>
+    </None>
+  </ItemGroup>
+</Project>

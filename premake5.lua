@@ -34,12 +34,12 @@ workspace "Storm"
           "%{prj.name}/SRC/**.h",
           "%{prj.name}/SRC/**.cpp",
           "%{prj.name}/SRC/**.ini",
-          "%{prj.name}/3dlibs/GLFW/include/**.h",    --new adds file to project solution
-          "%{prj.name}/3dlibs/GLFW/include/**.cpp",  --new adds file to project solution
-          "Engine/3dlibs/glm/glm/**.hpp",
-		  "Engine/3dlibs/glm/glm/**.inl",
-          "3dlibs/ImGuizmo/ImGuizmo.h",              --new adds file to project solution
-		  "3dlibs/ImGuizmo/ImGuizmo.cpp"             --new adds file to project solution
+--          "%{prj.name}/3dlibs/GLFW/include/**.h",    --new adds file to project solution
+--          "%{prj.name}/3dlibs/GLFW/include/**.cpp",  --new adds file to project solution
+          "Engine/3dlibs/glm/glm/**.hpp"
+--		  "Engine/3dlibs/glm/glm/**.inl"
+--          "3dlibs/ImGuizmo/ImGuizmo.h",              --new adds file to project solution
+--		  "3dlibs/ImGuizmo/ImGuizmo.cpp"             --new adds file to project solution
       }
 
 
@@ -57,7 +57,7 @@ workspace "Storm"
           links 
       {
           "GLFW",
-          "ImGui",
+--          "ImGui",
           "opengl32.lib"
       }
 
@@ -97,7 +97,7 @@ workspace "Storm"
          defines "ST_DIST"
          optimize "On"
 
-        project "Sandbox"
+  project "Sandbox"
           location "Sandbox"
           kind "ConsoleApp"
           language "C++"
@@ -115,7 +115,8 @@ workspace "Storm"
       {
         "Engine/3dlibs/Spdlog/include",
         "Engine/SRC",
-        "Engine/3dlibs/glm/glm" 
+        "Engine/3dlibs/glm/glm",
+		"%{IncludeDir.GLFW}"
       }
 
          links

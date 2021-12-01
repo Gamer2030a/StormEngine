@@ -1,1 +1,1 @@
-# Storm Is made by parsa dehghani for use of this engine Private or for comercial use please contact Parsa dehghani : Gamer2030fasterthangame@gmail.com
+# Storm Is made by parsa dehghani for use of this engine Private or for comercial use please contact Parsa dehghani : Gamer2030fasterthangame@gmail.com this Engine is in Early stages of development and is not able to render Objects.
